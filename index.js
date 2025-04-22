@@ -7,7 +7,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // MongoDB Atlas connection
-const uri = "mongodb+srv://Hardik:H@rd!k12@mfa-cluster.cypbsin.mongodb.net/?retryWrites=true&w=majority&appName=mfa-cluster";
+const uri = "mongodb+srv://Hardik:H%40rd%21k12@mfa-cluster.cypbsin.mongodb.net/mfa-auth?retryWrites=true&w=majority&appName=mfa-cluster";
 const client = new MongoClient(uri);
 let usersCollection;
 
