@@ -97,7 +97,7 @@ app.post("/api/auth/verify", (req, res) => {
   if (qr === "MFA-SESSION-TEST12345") {
     return res.status(200).send("✅ MFA Verified Successfully");
   } else {
-    return res.status(401).send("❌ Invalid or Expired QR Code");
+    return res.status(401).send("❌ Invalid or Expired QR Code! Try Again");
   }
 });
 
